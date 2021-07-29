@@ -1,0 +1,108 @@
+body{
+    margin-top: 0px;
+    color: white;
+    background-color: #ebebeb;
+}
+
+.header-container{
+    background-color: rgb(60,60,60);
+    min-height: 100px;
+    margin-bottom: 50px;
+    position:sticky;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+   
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.button{
+    padding: 10px;
+    border: 1px solid;
+    margin-left: 10px;
+}
+.container{
+   
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.col{
+   background-color: aquamarine;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+    height: auto;
+    width: 100%;
+}
+
+.col p{
+    text-align: center;
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+@media (max-width:768px) {
+  
+    .col{
+           width: 45%;
+    }
+   /* .hide-desktop-only{
+        display: block;
+    }*/
+    
+}
+
+@media(max-width:400px){
+    .col{
+        width: 100%;
+    }
+
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    nav a{
+        display: block;
+       
+    }
+
+    .logo{
+        padding: 20px 0;
+    }
+    .button{
+        margin-left: 0px;
+    }
+}
